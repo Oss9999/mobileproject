@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Garage Logo -->
+        <ImageView
+            android:id="@+id/garageLogo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center" />
+
+        <!-- Garage Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ABC Garage"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp" />
+
+        <!-- Garage Phone -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone: +123 456 7890"
+            android:textSize="16sp"
+            android:layout_gravity="center" />
+
+        <!-- Section Title for Services -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Services:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+
+        <!-- Spinner for All Services -->
+        <Spinner
+            android:id="@+id/servicesSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- ListView for Services -->
+        <ListView
+            android:id="@+id/servicesListView"
+            android:layout_width="match_parent"
+            android:layout_height="134dp"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp" />
+
+        <!-- Section Title for Cars -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose a Car:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+
+        <!-- Spinner for Cars -->
+        <Spinner
+            android:id="@+id/carSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="4dp" />
+
+        <!-- Submit Request Button -->
+        <Button
+            android:id="@+id/requestButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Request"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/notificationButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Notifications"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
